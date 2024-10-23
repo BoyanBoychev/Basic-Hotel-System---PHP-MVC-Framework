@@ -22,7 +22,7 @@ A web application built with PHP and a basic custom MVC framework for managing h
 3. Install dependencies (If you already have Composer installed), run the following command to install dependencies:
    "composer install"
 4. Set up Database:
-   - Create database named "hotel" - I'm using MySQL server from Xampp
+   - Create database named "hotel" - I'm using MySQL server from XAMPP
    - Use this SQL code to create the tables:
      ##User table:
      
@@ -53,7 +53,7 @@ A web application built with PHP and a basic custom MVC framework for managing h
     ('Suite', 150, 0),
     ('Family Room', 114, 0);
 
-5. Ensur that the database connection is correctly set up in app/models/UserModel.php and app/models/RoomModel.php - PDO connection settings should match your database credentials
+5. Ensure that the database connection is correctly set up in app/models/UserModel.php and app/models/RoomModel.php - PDO connection settings should match your database credentials
 6. Set up environment variables:
    - Create a .env file in the root directory of your project
    - Add the following configuration (adjust according to your setup):
@@ -65,7 +65,7 @@ A web application built with PHP and a basic custom MVC framework for managing h
    - Start your local server (XAMPP)
    - Access the application in your browser - (In my case: http://localhost/hotel-reservation/public/index.php), in your maybe it will be (http://localhost/Basic-Hotel-System---PHP-MVC-Framework/public/index.php)
   
-##Usage
+## Usage
 - User Registration: Go to the registration page and create a new account. (http://localhost/Basic-Hotel-System---PHP-MVC-Framework/public/index.php/register)
 - Login: Use your registered credentials to log in. (http://localhost/Basic-Hotel-System---PHP-MVC-Framework/public/index.php/login)
 - Room Reservation: Search for available rooms and make reservations.

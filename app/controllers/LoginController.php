@@ -5,6 +5,16 @@ class LoginController extends Controller
 
     public function index()
     {
+        if (!$this->isLoggedIn()) {
+            // Redirect to login
+            header('Location: /login');
+            exit();
+        }
+        if (!$this->isAdmin()) {
+            // If not admin redirect to login
+            header('Location: /hotel-reservation/public/index.php/login');
+            exit();
+        }
         // echo "LoginController index method called.<br>";  // Debug output
         View::render('login');
     }
@@ -82,7 +92,6 @@ class LoginController extends Controller
 
         // Create the user in the database
         $userModel->createUser($email, $hashedPassword);
-
 
         echo "User registered successfully!";
 

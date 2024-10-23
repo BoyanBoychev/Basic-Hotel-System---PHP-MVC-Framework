@@ -13,6 +13,9 @@ class RoomController extends Controller
             header("Location: /hotel-reservation/public/index.php/login");
             exit();
         }
+        // if (!$this->isLoggedIn()) {
+        //     $this->redirect("/hotel-reservation/public/index.php/login");
+        // }
 
 
         // Fetch available rooms
