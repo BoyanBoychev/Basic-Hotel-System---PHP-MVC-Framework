@@ -63,7 +63,7 @@ A web application built with PHP and a basic custom MVC framework for managing h
      DB_PASS=
 7. Run the application
    - Start your local server (XAMPP)
-   - Access the application in your browser - (In my case: http://localhost/hotel-reservation/public/index.php), in your maybe it will be (http://localhost/Basic-Hotel-System---PHP-MVC-Framework/public/index.php)
+   - Access the application in your browser - (In my case: http://localhost/hotel-reservation/public/index.php/login), in your maybe it will be (http://localhost/Basic-Hotel-System---PHP-MVC-Framework/public/index.php/login)
   
 ## Usage
 - User Registration: Go to the registration page and create a new account. (http://localhost/Basic-Hotel-System---PHP-MVC-Framework/public/index.php/register)
